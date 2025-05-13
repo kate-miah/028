@@ -4,20 +4,86 @@
     /* height: 600px; */
     border: 1px solid black;
     display: grid;
-    grid-template-columns: 200px 300px 100px;
-    /*  grid-template-columns: repeat(3,100px);
-    or
-        grid-template-columns: 100px 100px 100px; */
-    grid-template-rows: repeat(5, 100px);
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 100px);
 
 }
 
 .box {
-    /* width: 100px;
-    height: 100px; */
+
     background-color: antiquewhite;
     font-size: 2em;
     text-align: center;
     border: 1px solid  black;
  
 }
+
+.one {
+    background-color: blanchedalmond;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.two {
+
+}
+
+.three {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.four {
+    /* grid-column: 1 / 3;
+    grid-row: 4 / 6; */
+    /* grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end; */
+    grid-area: 4 / 1 / 6 / 3;
+}
+
+.five {
+
+}
+
+.six {
+
+}
+
+.seven {
+    grid-column: 1 / 2;
+}
+
+.eight {
+    grid-row: 5 / 7;
+    grid-column: 2 / 3;
+}
+
+.nine {
+    grid-column: 3 / 4;
+    grid-row: 5 / 7;
+}
+
+.ten {
+
+}
+
+
+
+/* 
+Grid- сетка
+по-дефолту - 1 колонка
+
+Управление колонками
+grid-template-colums
+
+Управление рядами
+grid-template-rows
+
+1fr (fraction) - доля размера родительского элемента
+*/
+
+/*  grid-template-columns: repeat(3,100px);
+    or
+    grid-template-columns: 100px 100px 100px; 
+*/
