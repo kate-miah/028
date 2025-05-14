@@ -5,28 +5,23 @@
     border: 1px solid black;
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(6, 100px);
-    column-gap: 10px;
-    row-gap: 10px;
+    grid-template-rows: repeat(6, 16.6vh);
+
 }
 
 .box {
     background-color: antiquewhite;
     font-size: 2em;
     text-align: center;
-    border: 1px solid  black;
-
-    background-size: cover;
-    background-position: center;
- 
+    /* border: 1px solid  black; */
 }
 
-.one {
-    background-image: url(./pexels-francesco-ungaro-2325447.jpg); 
-    background-repeat: no-repeat;
-
-
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
+
 
 .one, .four {
     grid-row: 1 / 3;
@@ -42,24 +37,8 @@
 .four, .twelve {
     grid-column: 4 / 5;
 }
-.two {
-    background-image: url(./pexels-mohamedelaminemsiouri-2100387.jpg);
-
-
-}
-
-.three {
-    background-image: url(./pexels-pixabay-163848.jpg);
-
-
-}
-
-.four {
-    background-image: url(./pexels-pixabay-46160.jpg);
-}
 
 .five {
-    background-image: url(./pexels-scottwebb-1048039.jpg);
     grid-column: 1 / 2;
 }
 .five, .eight {
@@ -69,16 +48,8 @@
 .six, .seven {
     grid-column: 2 / 3;
 }
-.six {
-    background-image: url(./pexels-sebastian-palomino-933481-1955134.jpg);
-}
-
-.seven {
-    background-image: url(./pexels-asadphoto-1430677.jpg);
-}
 
 .eight {
-    background-image: url(./pexels-fmaderebner-869258.jpg);
     grid-column: 3 / 5;
 }
 
@@ -86,22 +57,6 @@
     grid-row: 5 / 7;
 }
 
-.nine {
-    background-image: url(./pexels-luisdelrio-15286.jpg);
-
-}
-
-.ten {
-    background-image: url(./pexels-oday-hazeem-4297-106606.jpg);
-}
-
-.eleven {
-    background-image: url(./pexels-daejeung-2734469.jpg);
-}
-
-.twelve {
-    background-image: url(./pexels-thatguycraig000-1563355.jpg);
-}
 
 /* 
 Grid- сетка
