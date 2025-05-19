@@ -1,63 +1,61 @@
 @import url(reset.css);
 
-.container {
-    /* height: 600px; */
-    border: 1px solid black;
+.grid-container {
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr 2fr;
-    grid-template-rows: repeat(6, 16.6vh);
-
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 93vh repeat(2, 80vh);
+    /* column-gap: 1em; */
+    row-gap: 1em;
 }
-
-.box {
-    background-color: antiquewhite;
-    font-size: 2em;
-    text-align: center;
-    /* border: 1px solid  black; */
-}
-
-.img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-.one, .four {
-    grid-row: 1 / 3;
-}
-.one, .nine {
+.first-screen {
+    background-image: url(./beach3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     grid-column: 1 / 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
-.two, .three, .ten,.eleven {
-    grid-column: 3 / 4;
+.first-screen-text {
+    width: 70%;
+    background-color: rgba(255, 188, 69, 0.88);
+    padding: 0.5em 0;
+    margin-bottom: 3%;
 }
 
-.four, .twelve {
-    grid-column: 4 / 5;
+.first-screen-text:hover {
+    background-color: rgba(255, 166, 0, 0.702);
 }
 
-.five {
-    grid-column: 1 / 2;
-}
-.five, .eight {
-    grid-row: 3 / 5;
-}
+.first-screen-text p {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0.5em;
 
-.six, .seven {
-    grid-column: 2 / 3;
 }
 
-.eight {
-    grid-column: 3 / 5;
+.card {
+    border-top: 6px solid orange;
+    margin: 40px 20px;
 }
 
-.nine, .twelve {
-    grid-row: 5 / 7;
+.card:nth-child(even) {
+    margin-left: 40px;
 }
 
+.card:nth-child(odd) {
+    margin-left: 40px;
+}
 
+.card img {
+    width: 100%;
+}
+
+.card h2 {
+    font-size: 2em;
+    margin: 1em;
+}
 /* 
 Grid- сетка
 по-дефолту - 1 колонка
